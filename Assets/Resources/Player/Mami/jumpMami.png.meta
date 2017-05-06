@@ -1,11 +1,13 @@
 fileFormatVersion: 2
-guid: 7ffe0397f6e2f76409dc0b1b4ba91d4c
-timeCreated: 1494107946
+guid: 8c092e06a6b69d6448df3b07872d4246
+timeCreated: 1494106547
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: pointStars_0
-    21300002: pointStars_1
+    21300000: jumpMami_0
+    21300002: jumpMami_1
+    21300004: jumpMami_2
+    21300006: jumpMami_3
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -72,26 +74,52 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pointStars_0
+      name: jumpMami_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 8
-        width: 34
-        height: 34
+        x: 10
+        y: 11
+        width: 56
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: pointStars_1
+      name: jumpMami_1
       rect:
         serializedVersion: 2
-        x: 46
-        y: 2
-        width: 33
-        height: 33
+        x: 81
+        y: 12
+        width: 54
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jumpMami_2
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 12
+        width: 55
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jumpMami_3
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 12
+        width: 53
+        height: 109
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

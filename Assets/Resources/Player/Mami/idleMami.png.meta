@@ -1,11 +1,15 @@
 fileFormatVersion: 2
-guid: 7ffe0397f6e2f76409dc0b1b4ba91d4c
-timeCreated: 1494107946
+guid: 89139ec003c332547bbc79c5b1b9a881
+timeCreated: 1494110657
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: pointStars_0
-    21300002: pointStars_1
+    21300000: idleMami_0
+    21300002: idleMami_1
+    21300004: idleMami_2
+    21300006: idleMami_3
+    21300008: idleMami_4
+    21300010: idleMami_5
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -72,28 +76,80 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pointStars_0
+      name: idleMami_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 8
-        width: 34
-        height: 34
+        x: 7
+        y: 18
+        width: 75
+        height: 107
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: pointStars_1
+      name: idleMami_1
       rect:
         serializedVersion: 2
-        x: 46
-        y: 2
-        width: 33
-        height: 33
+        x: 110
+        y: 18
+        width: 75
+        height: 107
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idleMami_2
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 18
+        width: 75
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idleMami_3
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 18
+        width: 75
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idleMami_4
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 18
+        width: 75
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idleMami_5
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 18
+        width: 75
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
