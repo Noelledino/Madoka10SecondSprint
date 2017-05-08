@@ -19,6 +19,18 @@ public class MainMenu : MonoBehaviour {
 		Application.LoadLevel (info);
 	}
 
+	public void back(){
+		Application.LoadLevel ("titleMenu");
+	}
+
+	public void creditView(){
+		Application.LoadLevel ("credits");
+	}
+
+	public void howToPlay(){
+		Application.LoadLevel ("howToPlay");
+	}
+
 	public void QuitGame (){
 		Application.Quit();
 	}
