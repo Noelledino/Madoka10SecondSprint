@@ -22,9 +22,6 @@ public class TimeManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (thePauseMenu.isActiveAndEnabled) {
-			return;
-		}
 		startingTime -= Time.deltaTime;
 		timeText.text = "" + Mathf.Round(startingTime);
 		if (startingTime <= 0) {
