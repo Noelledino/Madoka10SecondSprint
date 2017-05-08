@@ -12,6 +12,7 @@ public class PlayerManager: MonoBehaviour{
 	public float maxSpeed = 3f;
 	bool facingRight = true;
 	Animator anim;
+	private GameManager gm;
 
 	bool grounded = false;
 	public Transform groundCheck;
@@ -25,6 +26,7 @@ public class PlayerManager: MonoBehaviour{
 	void Start ()	{
 		anim = GetComponent<Animator> ();
 		GetComponent<Rigidbody2D> ().freezeRotation = true;
+		gm = GameObject.FindGameObjectWithTag ("GameManager").GetComponent<GameManager>();
 	}
 
 	void FixedUpdate ()	{
@@ -83,5 +85,13 @@ public class PlayerManager: MonoBehaviour{
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
+
+	void OnTriggerEnter2D (Collider2D col) {
+		if (col.CompareTag ("Candy")) {
+			Destroy (col.gameObject);
+			gm.points += 1;
+		}
+	}
+
 
 		}
