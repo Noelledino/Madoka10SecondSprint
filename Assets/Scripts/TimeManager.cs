@@ -32,7 +32,9 @@ public class TimeManager : MonoBehaviour {
 			GameOverScreen.SetActive (true);
 			player.gameObject.SetActive (false);
 		}
-
-
+		if (startingTime >= 10) {
+			startingTime = 10;
+		}
+			
 	}
 }

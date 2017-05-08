@@ -7,12 +7,15 @@ using UnityEngine.SceneManagement;
 public class PlayerManager: MonoBehaviour{
 
 	public AudioClip jump;
+	public AudioClip coin;
+	public AudioClip time;
 	public AudioClip step;
 
 	public float maxSpeed = 3f;
 	bool facingRight = true;
 	Animator anim;
 	private GameManager gm;
+	private TimeManager tm;
 
 	bool grounded = false;
 	public Transform groundCheck;
@@ -27,6 +30,7 @@ public class PlayerManager: MonoBehaviour{
 		anim = GetComponent<Animator> ();
 		GetComponent<Rigidbody2D> ().freezeRotation = true;
 		gm = GameObject.FindGameObjectWithTag ("GameManager").GetComponent<GameManager>();
+		tm = GameObject.FindGameObjectWithTag ("TimeManager").GetComponent<TimeManager>();
 	}
 
 	void FixedUpdate ()	{
@@ -89,7 +93,15 @@ public class PlayerManager: MonoBehaviour{
 	void OnTriggerEnter2D (Collider2D col) {
 		if (col.CompareTag ("Candy")) {
 			Destroy (col.gameObject);
+			AudioSource ourAudio = GetComponent<AudioSource> ();
+			ourAudio.PlayOneShot (coin);
 			gm.points += 1;
+		}
+		if (col.CompareTag ("Time")) {
+			Destroy (col.gameObject);
+			AudioSource ourAudio = GetComponent<AudioSource> ();
+			ourAudio.PlayOneShot (time);
+			tm.startingTime += 10;
 		}
 	}
 
